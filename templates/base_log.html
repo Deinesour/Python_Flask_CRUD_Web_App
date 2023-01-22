@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/static/style.css" rel="stylesheet">
+    <script src="/static/code.js"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/add_board">Add Boards</a></li>
+            <li><a href="/view_boards">View Boards</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

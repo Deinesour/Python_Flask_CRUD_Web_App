@@ -1,0 +1,58 @@
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li{
+    size: 20px;
+    display: inline;
+    padding: 20px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color:darkmagenta;
+}
+
+a{
+    color:black;
+}
+
+body{
+    text-align: center;
+    background-color: mediumpurple;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+thead th{
+    width: 25%;
+}
+thead{
+    background-color:dimgray;
+    color:white;
+}
+tbody tr:nth-child(odd){
+    background-color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color:grey;
+    color: white;
+}
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}

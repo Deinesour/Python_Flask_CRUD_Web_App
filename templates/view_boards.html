@@ -1,0 +1,25 @@
+{% extends "base_log.html" %}
+{% block title %} View Boards {% endblock %}
+{% block content %}
+<br><br><br>
+<table id="data" class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for snow in board %}
+        <tr>
+          <td>{{ snow.name }}</td>
+          <td>{{ snow.size }}</td>
+          <td>{{ snow.price }}</td>
+          <td><a href="/update/{{snow.id}}">Update</a></td>
+          <td><a href="/delete/{{snow.id}}">Delete</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
